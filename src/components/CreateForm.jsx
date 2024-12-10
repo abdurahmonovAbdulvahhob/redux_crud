@@ -14,8 +14,8 @@ const CreateForm = () => {
   });
 
   const dispatch = useDispatch();
-  const formDate = useSelector(state=> state.form.value)
-  console.log(formDate) 
+  const formDate = useSelector((state) => state.form.value);
+  console.log(formDate);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,7 +37,7 @@ const CreateForm = () => {
       state: "New Mexico",
       zip: "",
     }); // Formni tozalash
-   window.scrollTo(0, document.body.scrollHeight);
+    window.scrollTo(0, document.body.scrollHeight);
   };
   return (
     <div className="grid place-items-center h-screen">
@@ -138,7 +138,7 @@ const CreateForm = () => {
                 onChange={handleChange}
                 value={formData.state}
               >
-                <option >New Mexico</option>
+                <option>New Mexico</option>
                 <option>Missouri</option>
                 <option>Texas</option>
               </select>
